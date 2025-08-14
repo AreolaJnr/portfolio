@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="description" content="Kolade Areola's Portfolio website"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="refesh.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Error 404 - Kolade Areola</title>
+    <style type="text/css">
+    *{
+    margin: 0;
+    border: 0;
+    }
+    body{
+        color: #ffffff;
+        /* background: linear-gradient(to bottom, #e8ebf1 2%, #ffffff 20%) center/cover no-repeat; */
+        background: url(space.gif) ;
+    }
+            .header-top{
+        justify-content: space-between;
+        padding: 0.5cm 1cm 0.1cm 1cm;
+    }
+    .logo{
+        width: 2cm;
+        height: 2cm;
+        margin-top: -10px;
+    }
+
+    /* navigation menu design */
+    nav {
+        float: right;
+    }
+
+    nav li{
+        list-style: none;
+        padding: 8px 16px;
+    }
+
+    nav li:last-child{
+        border: 2px solid;
+        border-image: linear-gradient( to right, #828db1 20%, #fd1d1d 40%, #833ab4 60%, #fcb045 80%) 4;
+        background-color: #ffffff;
+    }
+    nav li:last-child a{
+        color: #828db1;
+    }
+
+    nav li:last-child:hover{
+        border: 2px solid #ffffff;
+        background-color: #828db1;
+    }
+    nav li:last-child:hover a{
+        color: #ffffff;
+    }
+    nav a{
+        text-decoration: none;
+        color: #828db1;
+        font-size: large;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .nav{
+        display: inline-flex
+    ;
+    }
+
+    section {
+        text-align: center;
+    }
+    section div{
+        font-size: 17px;
+        margin: 5% 30% 0 30%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    section p{
+        margin-top: 15px;
+        margin-bottom: 30px;
+        font-weight: 300;
+        line-height: 25px;
+    }
+    section button{
+        padding: 15px 20px;
+        margin: 17px 0 30px 0;
+        background-color: #828db1;
+        color: #ffffff;
+        border-radius: 6px;
+        font-size: 17px;
+    }
+    .back{
+        display: none;
+    }
+    @media (max-width: 640px) {
+        nav{
+            display: none;
+        }
+        section{
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        section img{
+            height: 85%;
+            width: 85%;
+            margin-top: 5vh;
+        }
+        section div{
+            margin: 5vh;
+            line-height: 20px;
+        }
+        .logo{
+            margin-top: none;
+        }
+        .header-top{
+            display: flex;
+            justify-content: space-between;
+        }
+        .back{
+            align-self: center;
+            justify-self: center;
+            display: inline-flex;
+            justify-content: space-between;
+            gap: 5px;
+            text-emphasis: none;
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            color: #828db1;
+            padding-bottom: 3px;
+            border-bottom-width: 3px;
+            border-bottom-style: solid;
+            border-image: linear-gradient( to right, #828db1 20%, #fd1d1d 40%, #833ab4 60%, #fcb045 80%) 4;
+        }
+        .material-symbols-outlined{
+            font-size: 18px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <!--this is the website logo-->
+            <img src="logo.webp" alt="logo" class="logo">
+            <!--this is the navigation bar-->
+            <nav>
+                <div class="menu-bar" onclick="menu()" id="nav">
+                    <span class="bar"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar3"></span>
+                </div>
+                <ul class="nav"  id="menu">
+                    <li><a href="https://koladeareola.kesug.com/?i=1#home">Home</a></li>
+                    <li><a href="https://koladeareola.kesug.com/?i=1#services">Services</a></li>
+                    <li><a href="https://koladeareola.kesug.com/?i=1#about">About</a></li>
+                    <li><a href="https://koladeareola.kesug.com/?i=1#portfolio">Portfolio</a></li>
+                    <li><a href="https://koladeareola.kesug.com/?i=1#hire">Hire Me</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="back" onclick="window.history.back(); return false;"> <span class="material-symbols-outlined">arrow_circle_left </span> Go Back</a>
+        </div>
+    </header>
+    <section>
+        <img src="error404.png" alt="Error 404 image" >
+        <div>
+            <p> 
+                Page not found. <br>
+                The server can't find the requested page, 
+                often due to broken links, misspelled URLs, 
+                or moved content without proper redirection
+            </p>
+            <a href="https://koladeareola.kesug.com/">
+                <button>
+                    Return to website
+                </button>
+            </a>
+        </div>
+    </section>
+   
+</body>
+<script>
+
+</script>
+</html>

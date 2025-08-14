@@ -1,0 +1,875 @@
+*{
+    margin: 0;
+    border: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    cursor: cell;
+    transition: 0.3s;
+    background-color: #D6CCC2;
+}
+/* logo design */
+.logo{
+    width: 2cm;
+    height: 2cm;
+}
+/* header design */
+header{
+    box-shadow: 0 4px 8px rgba(0,0,0,0.19), 0 0 0 0 rgba(0,0,0,0);
+    padding: 1cm;
+    padding-bottom: 1cm;
+    height: fit-content;
+    background: url(1201.webp) #333;
+    background-blend-mode: overlay;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header-top{
+    justify-content: space-between;
+}
+
+header div{
+    display: flex;
+    justify-content: space-around;
+}
+/* navigation menu design */
+nav {
+    float: right;
+}
+
+nav li{
+    list-style: none;
+    padding: 8px 16px;
+}
+
+nav li:last-child{
+    border: 2px solid #330000;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+nav li:last-child a{
+    color: #330000;
+}
+
+nav li:last-child:hover{
+    border: 2px solid #ffffff;
+    background-color: #330000;
+}
+nav li:last-child:hover a{
+    color: #ffffff;
+}
+nav a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav{
+    display: inline-flex
+   ;
+}
+.material-symbols-mode{
+    float: right;
+    display: block;
+}
+
+.material-symbols-outlined {
+    color: #ffffff;
+    background-color: #330000;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 1cm 1cm 2cm 1cm;
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 0;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+/* header introduction design */
+header div div{
+    margin: 2cm 0 0.5cm 1cm;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 400;
+    display: block;
+    color: #ffffff;
+}
+
+header div strong{
+    font-weight: bolder;
+    font-size: 1.5cm;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+}
+.leSnake { 
+    animation: eSnake 1.5s ease-in-out; 
+    animation-iteration-count: infinite;
+    margin: 0 0 1cm 0;
+    display: block;
+    position: relative;
+}
+@keyframes leSnake {
+    from, to { transform: translateY(0px);
+        position: relative;
+     }
+    50% { transform: translateY(30px);
+        position: relative;
+     }
+}
+.leFadeIn { animation-name: leFadeIn }
+@keyframes leFadeIn {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
+
+/* header image */
+header .header-img{
+    width: 30%;
+    height: 30%;
+    margin-top: 1cm;
+    display: inline-block;
+    filter:drop-shadow(10px 5px 2px #333);
+    background-color: #73605B;
+    animation: hbg 7s ease infinite 0s;
+    border-radius: 50%;
+}
+
+@keyframes hbg {
+    0%{
+        border-radius: 49% 51% 55% 45% / 49% 46% 54% 51%  ;
+       }
+    20%{
+        border-radius: 49% 51% 55% 45% / 53% 54% 46% 47%  ;
+       }
+    40%{
+        border-radius: 49% 51% 47% 53% / 48% 51% 49% 52% ;
+        }
+    60%{
+        border-radius: 49% 51% 47% 53% / 41% 56% 44% 59%  ;
+       }
+    80%{
+        border-radius: 49% 51% 47% 53% / 49% 56% 44% 51%  ;
+       }
+    100%{
+        border-radius: 49% 51% 48% 52% / 49% 45% 55% 51% ;
+         }
+}
+
+/* styling the download button */
+.download-button{
+    font-size: 18px;
+    background-color: #ffffff;
+    border: 2px solid #330000;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 8px 13px;
+    width: fit-content;
+}
+
+.download-button:hover{
+    border: 2px solid whitesmoke;
+    background-color: #330000;
+}
+
+.download-button a{
+    color: #333;
+    text-decoration: none;
+}
+
+.download-button:hover a{
+    color: #ffffff;
+}
+
+.download-cv{
+    margin-top: 2cm;
+}
+.download-arrow{
+    padding: 5px 12px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #330000;
+    font-weight: bolder;
+}
+
+.svg{
+    width: max-content;
+    margin-top: -5.3cm;
+}
+/* menu for small devices */
+.menu-bar{
+    background-color: #330000;
+    padding: 10px 8px;
+    width: fit-content;
+    float: right;
+    margin: none;
+    border: 1px solid whitesmoke;
+    display: none;
+    border-radius: 10px;
+}
+
+.bar{
+    background-color: #ffffff;
+    height: 2px;
+    display: flex;
+}
+
+.bar2{
+    width: 0.4cm;
+}
+.bar3{
+    width: 0.6cm;
+}
+
+.menu-bar .bar + .bar{
+	margin-top: 8px
+}
+/* end of small devices menu */
+
+/* our services section */
+.services{
+    padding: 2cm 1cm 1cm 1cm;
+    text-align: center;
+    background-color: #D6CCC2;
+}
+
+.services .services-heading p{
+    font-size: 18px;
+    color: #330000;
+}
+.services .services-heading b{
+    font-size: 1cm;
+    color: #330000;
+}
+
+.services-cards{
+    margin: 0 auto;
+    display: inline-flex;
+    padding: 1cm;
+}
+
+.services-cards-1 {
+    width: 7cm;
+    height: fit-content;
+    border-radius: 15px;
+    box-shadow: 0 8px 8px 0 #333;
+    background-color: whitesmoke;
+    margin: 0 auto;
+}
+.services-cards-1:hover{
+    width: 8cm;
+}
+.services-cards-1 img{
+    margin: 1cm;
+    width: 4.5cm;
+    height: 4.5cm;
+}
+.services-cards-1 article{
+    padding: 1cm;
+    color: #ffffff;
+    background-color: #73605B;
+}
+.services-cards-1 article p{
+    font-weight: 300;
+    text-align: center;
+    font-family: forte;
+    font-size: large;
+}
+/* services card buttons */
+.services-button{
+    background-color: #330000;
+    border-radius: 8px;
+    border: 1.5px solid white;
+    color: #ffffff;
+    padding: 8px 15px;
+}
+
+/* styling our about section */
+.about{
+    background-color: #73605B;
+    color: #ffffff;
+    color-scheme: dark;
+}
+/* div inside the about section */
+.about-div{
+    background-color: #322c2B;
+    color: #ffffff;
+    margin-top: 0.5cm;
+    margin-bottom: 0;
+    margin-left: 1cm;
+    padding: 1cm;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* styling the about paragraph */
+.about p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1cm;
+}
+
+/* styling the about text */
+.about-text{
+    padding: 0;
+    font-family: playfair,lora,lucida sans,forte;
+    width: 8cm;
+    height: fit-content;
+}
+
+/* picture in about section */
+.about-img{
+    border: 3px solid #ffffff;
+    border-radius: 18px;
+    width: 26%;
+    height: 26%;
+    float: inline-end;
+}
+
+/* social media icon */
+.faa{
+    justify-content: space-around;
+    margin: auto 0;
+    margin-top: 1cm;
+}
+.about .fa{
+    font-size: 25px;
+	padding: 4px;
+	text-decoration: none; 
+	color: #333;
+    background-color: #ffffff;
+	border: 0.8px solid #333;
+	width: 25px;
+    height: 25px;
+	text-align: center;
+    display: inline-block;
+    margin: auto ;
+}
+.about .fa:hover{
+	color: #ffffff;
+    background-color: #333;
+    border: 1px solid #ffffff;
+}
+
+/* Portfolio section */
+.portfolio{
+    padding: 1cm;
+    text-align: center;
+    background-color: #D6CCC2;
+}
+
+.portfolio-card{
+    display: flex;
+    margin: auto 0;
+    justify-content: space-evenly;
+    margin: 1cm;
+}
+
+.portfolio-card img{
+    width: 6cm;
+    border: 1px solid #333;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.portfolio-aj{
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(315deg, #833ab4,#fd1d1d 50%, #fcb045);
+    border-radius: 15px;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    border: solid 5px transparent;
+    margin-top: 0.8cm;
+}
+
+.portfolio-aj1{
+    width: 7cm;
+    height: fit-content;
+    margin: 20px;
+}
+.portfolio-aj1 div{
+    background-color: #73605B;
+    font-size: 0.8rem;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    margin: 0.5cm;
+    padding: 0.5cm;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.portfolio-heading{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1cm;
+    text-align: center;
+    margin-bottom: none;
+    color: #000000 !important
+}
+.portfolio-aj1 button{
+    padding: 11px 27px;
+    background-color: #330000;
+    color: #ffffff;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    border: 0.5px solid #ffffff;
+}
+.port-unavailable{
+    opacity: 0.5
+}
+/* hire section */
+.hire-back{
+    background: #73605B;
+}
+.hire{
+    /*background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    border: 1px solid rgba(255, 255, 255, 0.3);*/
+    background-color: #512125;
+    padding: 1cm;
+    color: #ffffff;
+    justify-content: space-evenly;
+    display: flex;
+    margin-right: 1cm;
+}
+.hire-head{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1cm;
+}
+form{
+    display: block;
+}
+form label{
+    font-size: 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+form input{
+    height: 1cm;
+    width: 7cm;
+    padding: 4px;
+    border-radius: 10px;
+    caret-color: #73605B;
+    border: 2px solid #73605B;
+    font-size: 17px;
+}
+form textarea{
+    height: 2cm;
+    width: 7cm;
+    padding: 4px;
+    border-radius: 10px;
+    caret-color: #73605B;
+    border: 2px solid #73605B;
+    font-size: 17px;
+}
+form .required{
+    color: #fd1d1d;
+}
+form .checkbox{
+    height: 14px;
+    width: 14px;
+    accent-color: #330000;
+}
+form .checkbox-label{
+    font-size: 13px;
+}
+form .submit{
+    float: right;
+    background-color: #73605B;
+    width: 3cm;
+    height: 1cm;
+    border: 2px solid #73605B;
+    border-radius: 9px;
+    color: #ffffff;
+}
+form .submit:hover{
+    background-color: #73605B;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+.response{
+    color: black;
+    margin-top: 5%;
+    margin-bottom: 0;
+    margin-left: 20%;
+    margin-right: 20%;
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 15px 25px;
+    display: none;
+    border: 1px solid #330000;
+    text-align: center;
+}
+/* faq */
+.faq{
+    padding: 1cm;
+    margin-top: -1cm;
+    max-width: 8cm;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.faq p{
+    font-size: 0.8cm;
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 1cm;
+    color: #ffffff;
+}
+.faq-q{
+    padding: 22px;
+    box-shadow: 0 1px 3px 0 whitesmoke, 0 1px 1px whitesmoke;
+    margin-top: 1cm;
+    border-radius: 15px;
+    background-color: #73605B;
+}
+.faq-q b{
+    font-weight: 300;
+    font-size: 15px;
+    max-width: 75%;
+}
+.faq-a{
+    margin-top: 0.5em;
+    display: none;
+    border-top: 2px solid #330000;
+    padding-top: 8px;
+}
+.faq .fa{
+    display: block;
+    padding: 5px;
+    width: 25px;
+    height: 25px;
+    background-color: #330000;
+    margin-left: 15px;
+    text-align: center;
+    margin: auto 0;
+}
+
+.faq .fa:hover{
+    border: 0.5px dotted #ffffff;
+}
+.faq-q-q{
+    display: flex;
+    justify-content: space-between;
+}
+/* styling marquee */
+.marq{
+    bottom: 0;
+    width: 100%;
+    height: 0.8cm;
+    display: inline-flex;
+    position: fixed;
+}
+.mar-br {
+    background-color: #73605B;
+    color: #ffffff;
+    padding: 7px 15px;
+    width: 3cm;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+    letter-spacing: 2px;
+    font-size: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+marquee{
+    float: inline-end;
+    background-color: #ffffff;
+    color: black;
+    padding: 5px 0px;
+    font-family: verdana;
+    border-top: 1.5px solid #73605B;
+}
+
+/* footer */
+.foot-copy{
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.foot2{
+    display: flex;
+    justify-content: space-around;
+    border-top: 0.5px dotted #ffffff;
+    padding-top: 0.5cm;
+}
+footer{
+    background-color: #73605B;
+    padding: 1cm;
+    border-top: 0.4px dotted #ffffff;
+}
+.toggle{
+    display: block;
+    margin-bottom: 1cm;
+}
+.nav-foot{
+    display: block;
+    list-style: none;
+    margin-bottom: 1cm;
+    padding: none;
+    font-size: 17px;
+}
+.nav-foot a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+.nav-foot li{
+    list-style: none;
+    padding-bottom: 15px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;  /* 60px * 0.8 */
+    height: 27.2px;  /* 34px * 0.8 */
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 27.2px;  /* Adjust based on height */
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20.8px;  /* 26px * 0.8 */
+    width: 20.8px;   /* 26px * 0.8 */
+    left: 3.2px;     /* 4px * 0.8 */
+    bottom: 3.2px;   /* 4px * 0.8 */
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #330000;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20.8px);  /* Adjust based on new width */
+}
+
+@media (max-width: 640px) {
+    .menu-bar{
+        display: block;
+        position: relative;
+        margin-top: -1.5cm;
+        margin-right: 1.4cm;
+    }
+    .nav{
+        display: none;
+        padding: 0.5cm 1cm 0.5cm 1cm;
+        background-color: #ffffff;
+    }
+
+    nav{
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding-top: 2.8cm;
+        position: absolute;
+    }
+
+    .nav li{
+        border-bottom: 1px solid #333;
+    }
+
+    .nav li a{
+        color: #330000;
+    }
+
+    .nav li:last-child{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .logo{
+        margin-left: 0.6cm;
+    }
+
+    header .header-img{
+        width: 270px;
+        height: 270px;
+        margin: auto 0;
+        align-items: center;
+    }
+
+    header div {
+        margin: auto 0;
+        display: inline-block;
+        justify-content: space-around;
+    }
+
+    header div div{
+        margin: 0.5cm;
+    }
+
+    /* styling the download button  */
+    .download-cv{
+        margin-top: 0.5cm ;
+    }
+
+    /* about section */
+    .about{
+        border-top-left-radius: 120px;
+        border-bottom-right-radius: 120px;
+        background-image: url(me.webp);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: cover;
+    }
+    .about-div{
+        margin: inherit;
+        margin-bottom: 0;
+        margin-left: 0;
+        padding: none;
+        display: block;
+        border-top-left-radius: 120px;
+    }
+    .about-img{
+        display: block;
+        float: none;
+        height: 100%;
+        width: 100%;
+        margin-top: 0.7cm;
+        margin-bottom: 0.4cm;
+    }
+    .about-text{
+        margin-top: 1cm;
+        width: 100%;
+        display: block;
+        padding: 5px;
+    }
+    
+
+    .svg{
+        margin-top: -5.3cm;
+    }
+    /* services section */
+    .services{
+        padding: 1.5cm 0.4cm 0.4cm 0.4cm;
+        margin-top: 0;
+    }
+    .services-heading{
+        padding: 0.65cm;
+    }
+    .services-cards-1{
+        width: 6.5cm;
+    }
+    .services-cards-1:hover{
+        width: 7cm;
+    }
+
+    /* Portfolio */
+    .portfolio-card{
+        display: inline-block;
+        margin: auto 0;
+        align-content: center;
+    }
+    .portfolio-aj1{
+        width: 6cm;
+    }
+    .portfolio-card img{
+        width: 5cm;
+    }
+    .portfolio-heading{
+        margin-bottom: 1cm;
+    }
+    
+    /* hire section */
+    .hire{
+        display: block;
+        align-content: center;
+        margin: auto 0;
+        padding: 0.1cm;
+        padding-bottom: 1cm;
+        margin-right: none;
+    }
+
+    #form{
+        padding: 1cm;
+    }
+
+    form input{
+        width: 6cm;
+    }
+
+    form textarea{
+        width: 6cm;
+    }
+    .hire-head{
+        text-align: center;
+        margin-bottom: 0.8cm;
+        margin-top: 1cm;
+    }
+
+    .hire-back{
+        padding-left: 0.5cm;
+        padding-right: 0.5cm;
+        background-blend-mode: overlay;
+    }
+    /* faq */
+    .faq{
+        margin: 0.5cm;
+        margin-top: 2cm;
+        padding: 0.8cm;
+        padding-bottom: 0;
+        background-color: transparent;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border: none;
+    }
+    /* marquee */
+    .mar-br{
+        font-size: 10px;
+        width: 4.5cm;
+        padding: 7px 7px;
+    }
+
+    /* footer */ 
+    .nav-foot{
+        margin-left: -1cm;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .foot-copy{
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .foot2{
+        display: block;
+    }
+}
