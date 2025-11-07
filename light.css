@@ -147,7 +147,8 @@ header div strong{
     font-family: "Anton SC", sans-serif;
     font-weight: 400;
     margin-left: none;
-    background: linear-gradient(90deg, rgba(155,163,192,1) 0%, rgba(130,141,177,1) 50%, rgba(106,120,162,1) 100%);
+    background: linear-gradient(315deg, #833ab4,#fd1d1d 50%, #fcb045);
+    /* background: linear-gradient(90deg, #c802fa 0%, rgba(130,141,177,1) 50%, rgb(233, 127, 6) 100%); */
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
