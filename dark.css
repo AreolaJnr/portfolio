@@ -115,7 +115,8 @@ header div strong{
     font-family: "Anton SC", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background: linear-gradient(90deg, rgba(155,163,192,1) 0%, rgba(130,141,177,1) 50%, rgba(106,120,162,1) 100%);
+    background: linear-gradient(315deg, #833ab4,#fd1d1d 50%, #fcb045);
+    /* background: linear-gradient(90deg, rgba(155,163,192,1) 0%, rgba(130,141,177,1) 50%, rgba(106,120,162,1) 100%); */
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -129,6 +130,7 @@ header .header-img{
     margin-top: 1cm;
     display: inline-block;
     background-color: #414246;
+    filter:drop-shadow(2px 2px 2px #833ab4);
     animation: hbg 7s ease infinite 0s;
     border-radius: 50%;
 }
@@ -240,6 +242,7 @@ header .header-img{
     height: fit-content;
     border-radius: 15px;
     background-color: #595a5e;
+    box-shadow: 0 4px 4px 0 #833ab4;
     margin: 0 auto;
 }
 .services-cards-1:hover{
@@ -301,7 +304,7 @@ header .header-img{
 
 /* picture in about section */
 .about-img{
-    border: 2px solid #9ba3c0;
+    border: 2px solid #833ab4;
     border-radius: 18px;
     width: 26%;
     height: 26%;
